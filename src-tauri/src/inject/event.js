@@ -55,8 +55,7 @@ function externalDownLoadLink() {
 
 // Directly jumping out without hostname address.
 function externalTargetLink() {
-  // return ['zbook.lol'].indexOf(location.hostname) > -1;
-  return true;
+  return ['zbook.lol'].indexOf(location.hostname) > -1;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
