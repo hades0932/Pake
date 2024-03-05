@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const baseUrl = window.location.origin + window.location.pathname;
       const hrefUrl = new URL(url, baseUrl);
       tauri.shell.open(hrefUrl.href);
+      return;
     }
     // Call the original window.open function to maintain its normal functionality.
     return originalWindowOpen.call(window, url, name, specs);
